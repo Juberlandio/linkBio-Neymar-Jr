@@ -50,6 +50,77 @@ margin-left: auto;
 margin-right: auto;
 }
 
+/* Cores */
+:root {
+--cor-0: #ffffff;
+--cor-1: #FCFCFC;
+--cor-2: #FAFAFA;
+--cor-3: #F8F8F8;
+--cor-4: #cccccc;
+--cor-5: #b2b2b2;
+--cor-6: #9c9c9c;
+--cor-7: #717171;
+--cor-8: #595959;
+--cor-9: #404040;
+--cor-10: #2e2e2e;
+--cor-11: #1a1a1a;
+--cor-12: #0e0e0e;
+--cor-13: #000000;
+--cor-p1: #009c3b;
+--cor-p2: #ffdf00;
+--cor-p3: #0200006e;
+}
+.cor-0 {
+color: var(--cor-0);
+}
+.cor-1 {
+color: var(--cor-1);
+}
+.cor-2 {
+color: var(--cor-2);
+}
+.cor-3 {
+color: var(--cor-3);
+}
+.cor-4 {
+color: var(--cor-4);
+}
+.cor-5 {
+color: var(--cor-5);
+}
+.cor-6 {
+color: var(--cor-6);
+}
+.cor-7 {
+color: var(--cor-7);
+}
+.cor-8 {
+color: var(--cor-8);
+}
+.cor-9 {
+color: var(--cor-9);
+}
+.cor-10 {
+color: var(--cor-10);
+}
+.cor-11 {
+color: var(--cor-11);
+}
+.cor-12 {
+color: var(--cor-12);
+}
+.cor-13 {
+color: var(--cor-13);
+}
+.cor-p1 {
+color: var(--cor-p1);
+}
+.cor-p2 {
+color: var(--cor-p2);
+}
+.cor-p3 {
+color: var(--cor-p3);
+}
 
 /* Conteúdo Principal */
 .banner video {
@@ -62,23 +133,111 @@ height: 100%;
 }
 .banner .content {
 position: relative;
-z-index: 1;
-max-width: 1000px;
-margin: 0 auto;
-text-align: center;
+padding-top: 182px;
+padding-bottom: 40px;
 }
 .banner .content .logo img {
 width: 150px;
 height: 150px;
 border-radius: 50%;
 border: 5px solid transparent;
-background: linear-gradient(white, white) padding-box, linear-gradient(to right, yellow, green) border-box;
+background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--cor-p2), var(--cor-p1)) border-box;
+}
+.banner .content .logo {
+padding-bottom: 39px;
+}
+.banner .content .nome h1 {
+font: 600 1.875rem/2 "Ysabeau Infant", sans-serif;
+text-shadow: 0.09em 0.08em 0.08em #000000;
+}
+.banner .content .nome img {
+width: 15px;
+}
+.banner .content .nome {
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+}
+.banner .content .links{
+padding: 41px 20px 20px 20px;
+white-space: nowrap;
+}
+.banner .content .links .youtube, .instagram, .twitter, .facebook, .twitch{ 
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+background-color: var(--cor-p3);
+max-width: 750px;
+height: 38px;
+border-radius: 40px;
+position: relative;
+}
+.banner .content .youtube::after {
+content: "";
+width: 30px;
+height: 30px;
+top: 4px;
+left: 10px;
+background: url(../assets/youtube.png) no-repeat center;
+background-size: 100% 100%;
+position: absolute;
+}
+.banner .content .instagram::after {
+content: "";
+width: 30px;
+height: 30px;
+top: 4px;
+left: 10px;
+background: url(../assets/instagram.png) no-repeat center;
+background-size: 100% 100%;
+position: absolute;
+}
+.banner .content .twitter::after {
+content: "";
+width: 30px;
+height: 30px;
+top: 4px;
+left: 10px;
+background: url(../assets/twitter.png) no-repeat center;
+background-size: 100% 100%;
+position: absolute;
+}
+.banner .content .facebook::after {
+content: "";
+width: 30px;
+height: 30px;
+top: 4px;
+left: 10px;
+background: url(../assets/facebook.png) no-repeat center;
+background-size: 100% 100%;
+position: absolute;
+}
+.banner .content .twitch::after {
+content: "";
+width: 30px;
+height: 30px;
+top: 4px;
+left: 10px;
+background: url(../assets/twitch.png) no-repeat center;
+background-size: 100% 100%;
+position: absolute;
+}
+.banner .content .links a {
+padding: 10px;
+}
+.banner .content .links a h2 {
+font: 600 1rem/2.375 "Ysabeau Infant", sans-serif;
+padding: 10px;
 }
 
+
+
 /* Conteúdo Secundário */
-.backgraund {
+/* .backgraund {
 background-image: url(../assets/imagem-de-fundo.jpg);
-background-position: center;
+background-position: center center;
 background-size: 100% 100%;
 background-repeat: no-repeat;
-}
+} */
