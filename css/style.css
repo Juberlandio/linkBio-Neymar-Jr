@@ -186,12 +186,8 @@ border-radius: 40px;
 position: relative;
 border: 1px solid var(--cor-13);
 }
-.banner .content .redes-links li h2:hover{ 
-background: var(--cor-0);
-color: var(--cor-13);
-width: 750px;
-text-align: center;
-border-radius: 40px;
+.banner .content .redes-links li:hover{ 
+  background: linear-gradient(to right, var(--cor-p2), var(--cor-p1)) border-box;
 }
 .banner .content .youtube::after {
 content: "";
