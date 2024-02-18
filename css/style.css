@@ -1,4 +1,4 @@
-"""""""/* Global */
+/* Global */
 html, 
 body {
 margin: 0px;
@@ -31,7 +31,7 @@ width: 7px;
 background-color: rgb(35, 38, 41);
 }
 ::-webkit-scrollbar-thumb {
-background-color: yellow;
+background-color: var(--cor-p2);
 border-radius: 30px;
 }
 ::-webkit-scrollbar-track {
@@ -125,22 +125,24 @@ height: 100vh;
 }
 .banner .content {
 position: relative;
-padding-top: 182px;
-padding-bottom: 40px;
+padding-top: 0px;
+padding-bottom: 0px;
 }
 .banner .content .logo img {
-width: 150px;
-height: 150px;
+object-fit: cover;
+width: 200px;
+height: 200px;
 border-radius: 50%;
-border: 5px solid transparent;
+border: 6px solid transparent;
 background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--cor-p2), var(--cor-p1)) border-box;
 }
 .banner .content .logo {
-padding-bottom: 39px;
+padding-bottom: 20px;
 }
 .banner .content .nome h1 {
 font: 600 1.875rem/2 "Ysabeau Infant", sans-serif;
 text-shadow: 0.09em 0.08em 0.08em #000000;
+margin-bottom: 8px;
 }
 .banner .content .nome img {
 width: 15px;
@@ -151,9 +153,21 @@ flex-wrap: nowrap;
 justify-content: center;
 align-items: center;
 }
+.banner .content .nome h1:after {
+content: "";
+width: 1.70%;
+height: 0px;
+border: 2px solid transparent;
+background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--cor-p2), var(--cor-p1)) border-box;
+display: block;
+margin-top: -15px;
+border-radius: 10px;
+transition: 0.3s;
+position: absolute; /* Realinhando ao centro */
+}
 .banner .content .redes-links{
-padding: 41px 20px 20px 20px;
 white-space: nowrap;
+padding: 20px;
 }
 .banner .content .redes-links .youtube, .instagram, .twitter, .facebook, .twitch{ 
 display: flex;
@@ -170,6 +184,7 @@ margin-right: auto;
 height: 38px;
 border-radius: 40px;
 position: relative;
+border: 1px solid var(--cor-13);
 }
 .banner .content .youtube::after {
 content: "";
@@ -221,8 +236,8 @@ background: url(../assets/twitch.png) no-repeat center;
 background-size: 100% 100%;
 position: absolute;
 }
-.banner .content .redes-links a {
-padding: 10px;
+.banner .content .redes-links .youtube, .instagram, .twitter, .facebook{
+margin-bottom: 10px;
 }
 .banner .content .redes-links a h2 {
 font: 600 1rem/2.375 "Ysabeau Infant", sans-serif;
@@ -254,14 +269,17 @@ overflow-x: auto;
 -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 .tabela {
-max-width: 750px;
+max-width: 690px;
 box-sizing: border-box;
 padding-left: 20px;
 padding-right: 20px;
 margin-left: auto;
 margin-right: auto;
 }
-section.module h1 {
+section.module .titulo-tabela h1{
+text-align: center;
+}
+section.module .titulo-tabela h1{
 text-shadow: 0.09em 0.08em 0.08em #000000;
 font: 500 1.875rem/0.83 "montserrat", sans-serif;
 padding-bottom: 60px;
