@@ -61,6 +61,7 @@ text-align: center;
 --cor-p1: #009c3b;
 --cor-p2: #ffdf00;
 --cor-p3: #0200006e;
+--cor-p3: #000000cc;
 }
 .cor-0 {
 color: var(--cor-0);
@@ -113,6 +114,9 @@ color: var(--cor-p2);
 .cor-p3 {
 color: var(--cor-p3);
 }
+.cor-p3 {
+color: var(--cor-p4);
+}
 
 /* Conteúdo Principal */
 section.banner.module video {
@@ -141,7 +145,7 @@ padding-bottom: 20px;
 }
 .banner .content .nome h1 {
 font: 600 1.875rem/2 "Ysabeau Infant", sans-serif;
-text-shadow: 0.09em 0.08em 0.08em #000000;
+text-shadow: 0.09em 0.08em 0.08em var(--cor-13);
 margin-bottom: 8px;
 }
 .banner .content .nome img {
@@ -283,17 +287,17 @@ section.module .titulo-tabela h1{
 text-align: center;
 }
 section.module .titulo-tabela h1{
-text-shadow: 0.09em 0.08em 0.08em #000000;
+text-shadow: 0.09em 0.08em 0.08em var(--cor-13);
 font: 500 1.875rem/0.83 "montserrat", sans-serif;
 padding-bottom: 60px;
 }
 .tabela table thead tr th {
 padding: 15px;
-background: #000000cc;
+background: var(--cor-p4);
 font: 500 1rem/0.83 "montserrat", sans-serif;
 }
 .tabela table tbody tr:nth-child(even) {
-background: #000000cc;
+background: var(--cor-p4);
 }
 .tabela table tbody tr:nth-child(odd) {
 background: var(--cor-0);
