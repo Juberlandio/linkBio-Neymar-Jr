@@ -199,7 +199,7 @@ width: 30px;
 height: 30px;
 top: 4px;
 left: 10px;
-background: url(../assets/youtube.png) no-repeat center;
+background: url('../assets/youtube.png') no-repeat center;
 background-size: 100% 100%;
 position: absolute;
 }
@@ -209,7 +209,7 @@ width: 30px;
 height: 30px;
 top: 4px;
 left: 10px;
-background: url(../assets/instagram.png) no-repeat center;
+background: url('../assets/instagram.png') no-repeat center;
 background-size: 100% 100%;
 position: absolute;
 }
@@ -219,7 +219,7 @@ width: 30px;
 height: 30px;
 top: 4px;
 left: 10px;
-background: url(../assets/twitter.png) no-repeat center;
+background: url('../assets/twitter.png') no-repeat center;
 background-size: 100% 100%;
 position: absolute;
 }
@@ -229,7 +229,7 @@ width: 30px;
 height: 30px;
 top: 4px;
 left: 10px;
-background: url(../assets/facebook.png) no-repeat center;
+background: url('../assets/facebook.png') no-repeat center;
 background-size: 100% 100%;
 position: absolute;
 }
@@ -239,7 +239,7 @@ width: 30px;
 height: 30px;
 top: 4px;
 left: 10px;
-background: url(../assets/twitch.png) no-repeat center;
+background: url('../assets/twitch.png') no-repeat center;
 background-size: 100% 100%;
 position: absolute;
 }
@@ -268,7 +268,7 @@ background-size: cover;
 -o-background-size: cover;
 }
 section.module.parallax.parallax-1{
-background-image: url(../assets/imagem-de-fundo.jpg);
+background-image: url('../assets/imagem-de-fundo.jpg');
 }
 .tabela-container {
 overflow-x: auto;
