@@ -192,7 +192,7 @@ position: relative;
 border: 1px solid var(--cor-13);
 }
 .banner .content .redes-links li:hover{ 
-  background: linear-gradient(to right, var(--cor-p2), var(--cor-p1)) border-box;
+background: linear-gradient(to right, var(--cor-p2), var(--cor-p1)) border-box;
 }
 .banner .content .youtube::after {
 content: "";
