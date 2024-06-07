@@ -308,7 +308,8 @@ padding-right: 10px;
 }
 .tabela table tbody tr .image-text {
 width: 150px;
-height: 50px;
+padding-top: 10px;
+padding-bottom: 10px;
 display: flex;
 flex-wrap: nowrap;
 justify-content: center;
